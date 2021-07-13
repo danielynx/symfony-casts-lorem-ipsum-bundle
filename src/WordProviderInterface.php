@@ -1,6 +1,6 @@
 <?php
 
-namespace Knpu\LoremIpsumBundle;
+namespace KnpU\LoremIpsumBundle;
 
 interface WordProviderInterface
 {
