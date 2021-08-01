@@ -2,11 +2,17 @@
 
 namespace KnpU\LoremIpsumBundle;
 
+use KnpU\LoremIpsumBundle\DependencyInjection\Compiler\WordProviderCompilerPass;
 use KnpU\LoremIpsumBundle\DependencyInjection\KnpULoremIpsumExtension;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class KnpULoremIpsumBundle extends Bundle
 {
+    public function build(ContainerBuilder $container)
+    {
+        $container->addCompilerPass(new WordProviderCompilerPass());
+    }
     /**
      * Overridden to allow for the custom extension alias.
      */
