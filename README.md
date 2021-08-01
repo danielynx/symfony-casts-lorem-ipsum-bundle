@@ -7,7 +7,7 @@ than your normal lorem ipsum.
 Install the package with:
 
 ```console
-composer require knpuniversity/lorem-ipsum-bundle --dev
+composer require danielbackes/symfony-casts-lorem-ipsum-bundle --dev
 ```
 
 And... that's it! If you're *not* using Symfony Flex, you'll also
